@@ -12,7 +12,8 @@ public class Task_1_1_3 {
     }
     public static void main(String[] args) {
         
-        oddOrEven(10, null);    //pass the value for oddEorEven method for check_number and message parameter to show if the number is odd or even
+        oddOrEven(10, null);    /*pass the value for oddEorEven method for check_number
+                                                       and message parameter to show if the number is odd or even*/
     }
 
 }
