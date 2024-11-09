@@ -2,7 +2,6 @@ package activities.tasksheets;
 
 public class Task_1_1_2 {
     
-
     Task_1_1_2() {
 
     }
@@ -28,4 +27,9 @@ public class Task_1_1_2 {
         System.out.println(result);
     }
 
+    public static void main(String[] args) {
+        
+        compoundAssignment(1+2);     //pass the value for compoundAssignment method and print result using compound operators
+        
+    }
 }
