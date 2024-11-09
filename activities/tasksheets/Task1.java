@@ -1,6 +1,6 @@
-package chapter1.tasksheets;
+package activities.tasksheets;
 
-public class HelloWorldApp {
+public class Task1 {
     String name;
 
     public HelloWorldApp() {

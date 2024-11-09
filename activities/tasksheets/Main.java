@@ -1,4 +1,4 @@
-package chapter1.tasksheets;
+package activities.tasksheets;
 
 public class Main {
 
