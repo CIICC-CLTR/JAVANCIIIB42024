@@ -1,9 +1,9 @@
 package activities.tasksheets;
 
-public class Task1 {
+public class Task_1_1_1 {
     String name;
 
-    public Task1() {
+    public Task_1_1_1() {
         name = "Komusta Mundo!";
 
     }
