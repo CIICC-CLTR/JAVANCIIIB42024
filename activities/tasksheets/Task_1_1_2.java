@@ -7,7 +7,7 @@ public class Task_1_1_2 {
     }
 
     public static void compoundAssignment(int result) {
-        result = 1 + 2; // result is now 3
+         // result is now 3
         System.out.println(result);
 
         result -= 1; // result is now 2
