@@ -17,11 +17,20 @@ public class Palindrome {
             System.out.println("The " + (new String(charInput)) + " is not Palindrome");
         }
     }
+ // public static boolean isPalindrome(String str) {
+    // int length = str.length();
 
+    // for (int i = 0; i < length; i++) {
+    // if (str.charAt(i) != str.charAt(length - i - 1)) {
+    // return false;
+    // }
+    // }
+    // return true;
+    // }
     public static boolean isPalindrome(String input) {
         char arrayInput[] = input.toCharArray();
         for (int x = 0; x < arrayInput.length; x++) {
-            
+
             if (arrayInput[x] != arrayInput[arrayInput.length - x - 1]) {
                 return false;
             }
@@ -42,5 +51,7 @@ public class Palindrome {
         }
         return true;
     }
+
+   
 
 }
