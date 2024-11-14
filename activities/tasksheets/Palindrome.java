@@ -1,19 +1,23 @@
 package activities.tasksheets;
 
+class PalindromeChecking {
+    public static boolean checkPalindrome(String strInput) {
+
+        for (int x = 0; x < strInput.length() / 2; x++) {
+            if (strInput.charAt(x) != strInput.charAt(strInput.length() - x - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+}
+
 public class Palindrome {
     public static void main(String[] args) {
 
         String input = "nasabayabasan";
-        System.out.println(checkPalindrome(input.trim()) ? input + " is Palindrome" : input + " is not Palindrome");
-
-    }
-
-    public static boolean checkPalindrome(String strInput) {
-
-        for (int x = 0; x < strInput.length() / 2; x++) {
-            if (strInput.charAt(x) != strInput.charAt(strInput.length() - x - 1)) {return false;}
-        }
-        return true;
+        System.out.println(PalindromeChecking.checkPalindrome(input.trim()) ? input + " is Palindrome": input + " is not Palindrome");
 
     }
 
