@@ -4,7 +4,7 @@ public class Palindrome {
     public static void main(String[] args) {
 
         String input = "nasabayabasan";
-        System.out.println(checkPalindrome(input) ? input + " is Palindrome" : input + " is not Palindrome");
+        System.out.println(checkPalindrome(input.trim()) ? input + " is Palindrome" : input + " is not Palindrome");
 
     }
 
