@@ -3,7 +3,7 @@ package activities.tasksheets;
 public class Palindrome {
     public static void main(String[] args) {
 
-        String input = "madam";
+        String input = "nasabayabasan";
         System.out.println(checkPalindrome(input) ? input + " is Palindrome" : input + " is not Palindrome");
 
     }
