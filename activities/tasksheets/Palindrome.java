@@ -1,7 +1,9 @@
 package activities.tasksheets;
 
-class PalindromeChecking {
-    public static boolean checkPalindrome(String strInput) {
+ 
+
+public class Palindrome {
+    public boolean checkPalindrome(String strInput) {
 
         for (int x = 0; x < strInput.length() / 2; x++) {
             if (strInput.charAt(x) != strInput.charAt(strInput.length() - x - 1)) {
@@ -10,14 +12,10 @@ class PalindromeChecking {
         }
         return true;
     }
-
-}
-
-public class Palindrome {
     public static void main(String[] args) {
 
         String input = "nasabayabasan";
-        System.out.println(PalindromeChecking.checkPalindrome(input.trim()) ? input + " is Palindrome": input + " is not Palindrome");
+        System.out.println(new Palindrome().checkPalindrome(input.trim()) ? input + " is Palindrome": input + " is not Palindrome");
 
     }
 
