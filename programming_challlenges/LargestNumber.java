@@ -11,9 +11,9 @@ public class LargestNumber {
        
         double num1, num2, num3= 0.0;
 
-        num1 =checkValidnumber("Enter the First integer: ");
-        num2 = checkValidnumber("Enter the Second integer: ");
-        num3 = checkValidnumber("Enter the Third integer: ");
+        num1 =getValidnumber("Enter the First integer: ");
+        num2 =getValidnumber("Enter the Second integer: ");
+        num3 =getValidnumber("Enter the Third integer: ");
         scanner.close();
 
         System.out.println("\nYou entered the numbers: " + num1 + ", " + num2 + ", " + num3 +"\n");
@@ -31,7 +31,7 @@ public class LargestNumber {
          
     }
  
-    public static double checkValidnumber(String message) {
+    public static double getValidnumber(String message) {
         scanner = new Scanner(System.in);
         double inputNumber = 0;
 
