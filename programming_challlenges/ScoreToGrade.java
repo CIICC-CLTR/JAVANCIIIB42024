@@ -23,7 +23,7 @@ public class ScoreToGrade {
         else if (grade <= 69 && grade >= 60){msg = "Your " + grade + " grade is eqivalent of D";}
         else if (grade < 60){msg = "Your " + grade + " grade is eqivalent of F";}
         else {msg= "Please Input Valid Grade";}
-        return msg;   
+        return msg +"\n";   
     }
     public double getValidnumber(String prompt) {
          
