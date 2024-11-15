@@ -14,7 +14,7 @@ public class ScoreToGrade {
 
     public String getGradeequivalent(String prompt){
 
-      double grade =  checkValidnumber(prompt);
+      double grade =  getValidnumber(prompt);
        String msg="";
        
         if (grade <= 100 && grade >= 90){msg = "Your " + grade + " grade is eqivalent of A";}
@@ -25,7 +25,7 @@ public class ScoreToGrade {
         else {msg= "Please Input Valid Grade";}
         return msg;   
     }
-    public double checkValidnumber(String prompt) {
+    public double getValidnumber(String prompt) {
          
         double grade = 0.0;
 
