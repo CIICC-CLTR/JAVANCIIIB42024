@@ -25,7 +25,7 @@ public class ScoreToGrade {
         else {msg= "Please Input Valid Grade";}
         return msg;   
     }
-       public double checkValidnumber(String prompt) {
+    public double checkValidnumber(String prompt) {
          
         double grade = 0.0;
 

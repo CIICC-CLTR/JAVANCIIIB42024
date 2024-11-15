@@ -1,20 +1,23 @@
 package programming_challlenges;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class NumberToMonthDays {
+
+    public static int month;
+    public static  Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
 
-        System.out.print(new NumberToMonthDays().getMonth( "\nEnter a Month in Number: ")+"\n\n");
-        
+        // System.out.print(new NumberToMonthDays().getMonth( "\nEnter a Month in Number: ")+"\n\n");
+        System.out.println(new NumberToMonthDays().getMonth());
     }
 
-    public  StringBuffer getMonth(  String prompt){
-        Scanner scan = new Scanner(System.in);
-        StringBuffer stringMonth = new StringBuffer();
-
-        System.out.print(prompt);
-        int month = scan.nextInt();
-        
+    public StringBuilder getMonth(){
+       
+        StringBuilder stringMonth = new StringBuilder();
+       
+        if(isValidinput(month)){
+      
         switch (month) {
             case 1:  stringMonth.append(month).append(" is for January that has 31 days");break;
             case 2:  stringMonth.append(month).append(" is for February that has 28 days");break;
@@ -31,6 +34,30 @@ public class NumberToMonthDays {
             default: stringMonth.append("Invalid Input");break    ;
             }
             scan.close();
-            return stringMonth;
+            
+
+        }
+             return stringMonth.append("\n");
+    }
+
+    public boolean isValidinput(int input){
+         while (true) {
+            System.out.print("\nEnter Number Month only [1-12]: ");
+            try {
+                month =scan.nextInt() ;
+                if(month >0 && month<13){
+                    return true;
+                }
+                
+                
+              
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input! Accepting Integer only!");
+                scan.nextLine();
+            }
+
+        }
+ 
+
     }
 }
