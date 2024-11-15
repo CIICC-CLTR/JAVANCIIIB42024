@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class NumberToMonthDays {
 
-    public int month;
-    public Scanner scan = new Scanner(System.in);
+    int month;
+    Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
 
         System.out.println(new NumberToMonthDays().getMonth());
@@ -15,7 +15,7 @@ public class NumberToMonthDays {
        
         StringBuilder stringMonth = new StringBuilder();
        
-        if(isValidinput(month)){
+        if(isValidinput()){
       
             switch (month) {
                 case 1:  stringMonth.append(month).append(" is for January that has 31 days");break;
@@ -38,7 +38,7 @@ public class NumberToMonthDays {
     }
 
 
-    public boolean isValidinput(int input){
+    public boolean isValidinput(){
          while (true) {
             System.out.print("\nEnter Number Month only [1-12]: ");
             try {
