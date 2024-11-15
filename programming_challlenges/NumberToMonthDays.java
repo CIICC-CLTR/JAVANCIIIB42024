@@ -1,17 +1,14 @@
 package programming_challlenges;
 import java.util.Scanner;
+
 public class NumberToMonthDays {
     public static void main(String[] args) {
 
-       
-        
-
-        System.out.print(getMonth( "\nEnter a Month in Number: ")+"\n\n");
-         
+        System.out.print(new NumberToMonthDays().getMonth( "\nEnter a Month in Number: ")+"\n\n");
         
     }
 
-    public static StringBuffer getMonth(  String prompt){
+    public  StringBuffer getMonth(  String prompt){
         Scanner scan = new Scanner(System.in);
         StringBuffer stringMonth = new StringBuffer();
 
