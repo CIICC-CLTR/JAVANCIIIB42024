@@ -27,15 +27,16 @@ public class LargestNumber {
            
             return message= 
             (num1>num2 && num1>num3)? 
-            (Double.valueOf(num1)) + (" is the Largest number") :
+           (Double.valueOf(num1)) + (" is the Largest number") :
             (num2>num3)? 
             (Double.valueOf(num2)) + (" is the Largest number"):
-            (Double.valueOf(num3)) + (" is the Largest number");
+            (Double.valueOf(num2)) + (" is the Largest number");
              
 
     }
  
-        public static double getValidnumber(String message) {
+    
+    public static double getValidnumber(String message) {
         scanner = new Scanner(System.in);
         double inputNumber = 0;
 

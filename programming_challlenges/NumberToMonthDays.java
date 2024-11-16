@@ -11,7 +11,7 @@ public class NumberToMonthDays {
         System.out.println(new NumberToMonthDays().getMonth());
     }
 
-    public StringBuilder getMonth(){
+    public String getMonth(){
        
         StringBuilder stringMonth = new StringBuilder();
        
@@ -34,7 +34,7 @@ public class NumberToMonthDays {
                 }
                 scan.close();
         }
-             return stringMonth.append("\n");
+             return (stringMonth+("\n").toString();
     }
 
 
