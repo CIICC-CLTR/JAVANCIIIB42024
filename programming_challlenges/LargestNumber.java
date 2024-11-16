@@ -22,16 +22,20 @@ public class LargestNumber {
       
     }
 
-    public static StringBuilder largestNumber(double num1, double num2, double num3){
-            StringBuilder message = new StringBuilder();
+    public static String largestNumber(double num1, double num2, double num3){
+            String message = "";
            
-            return (boolean) (num1>num2 && num1>num3)? 
-            message.append(num1).append(" is the Largest number") :
-            ((num2>num3)? message.append(num2).append(" is the Largest Number"): message.append(num3).append(" is the Largest Number"));
-         
+            return message= 
+            (num1>num2 && num1>num3)? 
+            (Double.valueOf(num1)) + (" is the Largest number") :
+            (num2>num3)? 
+            (Double.valueOf(num2)) + (" is the Largest number"):
+            (Double.valueOf(num3)) + (" is the Largest number");
+             
+
     }
  
-    public static double getValidnumber(String message) {
+        public static double getValidnumber(String message) {
         scanner = new Scanner(System.in);
         double inputNumber = 0;
 
