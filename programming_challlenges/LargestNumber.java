@@ -18,24 +18,21 @@ public class LargestNumber {
 
         System.out.println("\nYou entered the numbers: " + num1 + ", " + num2 + ", " + num3 +"\n");
         System.out.println(largestNumber(num1, num2, num3));
-        
       
     }
 
     public static String largestNumber(double num1, double num2, double num3){
             String message = "";
            
-            return message= 
+            return message =
             (num1>num2 && num1>num3)?
             (Double.valueOf(num1)) + (" is the Largest number") :
             (num2>num3)? 
             (Double.valueOf(num2)) + (" is the Largest number"):
             (Double.valueOf(num3)) + (" is the Largest number");
-             
 
     } 
  
-    
     public static double getValidnumber(String message) {
         scanner = new Scanner(System.in);
         double inputNumber = 0;
