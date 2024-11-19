@@ -3,15 +3,7 @@ package programming_challlenges;
  
 
 public class PalindromeStringBuilder {
-    public boolean checkPalindrome(String strInput) {
-
-        for (int x = 0; x < strInput.length() / 2; x++) {
-            if (strInput.charAt(x) != strInput.charAt(strInput.length() - x - 1)) {
-                return false;
-            }
-        }
-        return true;
-    }
+   
     public static void main(String[] args) {
 
         String input = "nasabayabasan";
