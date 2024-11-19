@@ -6,11 +6,11 @@ public class PalindromeStringBuilder {
 
         String input = "nasabayabasan";
 
-        System.err.println(new PalindromeStringBuilder().wordPalindrome(input));
-
+        System.err.println(new PalindromeStringBuilder().checkPalindrome(input));
+        
     }
 
-    public String wordPalindrome(String input) {
+    public String checkPalindrome(String input) {
 
         if (!isPalindrome(input)) {
             return input + " is not Palindrome";
@@ -22,6 +22,7 @@ public class PalindromeStringBuilder {
     public boolean isPalindrome(String input) {
 
         StringBuilder word = new StringBuilder(input).reverse();
+        
         // word.toString(input).toString();
 
         if (!input.equals(word.toString())) {
