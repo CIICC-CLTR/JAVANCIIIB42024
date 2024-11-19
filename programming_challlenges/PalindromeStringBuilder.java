@@ -6,7 +6,7 @@ public class PalindromeStringBuilder {
 
         String input = "nasabayabasan";
 
-        System.err.println(new PalindromeStringBuilder().checkPalindrome(input));
+        System.out.println(new PalindromeStringBuilder().checkPalindrome(input));
 
     }
 
