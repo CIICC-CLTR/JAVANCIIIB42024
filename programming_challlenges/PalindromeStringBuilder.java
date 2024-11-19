@@ -1,37 +1,33 @@
 package programming_challlenges;
 
- 
-
 public class PalindromeStringBuilder {
-   
+
     public static void main(String[] args) {
 
         String input = "nasabayabasan";
-       
+
         System.err.println(new PalindromeStringBuilder().wordPalindrome(input));
 
     }
 
+    public String wordPalindrome(String input) {
 
-    public String wordPalindrome(String input){
-
-        if(!isPalindrome(input)){
-            return input +" is not Palindrome";
+        if (!isPalindrome(input)) {
+            return input + " is not Palindrome";
         }
 
         return input + " is Palindrome";
     }
 
-    public boolean isPalindrome(String input){
+    public boolean isPalindrome(String input) {
 
         StringBuilder word = new StringBuilder(input).reverse();
         // word.toString(input).toString();
 
-        if(!input.equals(word.toString())){
+        if (!input.equals(word.toString())) {
             return false;
         }
 
-        
         return true;
     }
 
