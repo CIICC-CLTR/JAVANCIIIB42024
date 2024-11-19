@@ -34,14 +34,9 @@ public class NumberToDayWeek {
         double number=0.0;
         System.out.print("\nEnter number [1 t0 7] to convert into Day in a Week: ");
     
-        try {
-            number = scan.nextDouble();
-            return (int)number;
-        } catch (Exception e) {
-            return (int)number;
-        }
-     
-    }
+        try {number = scan.nextDouble();return (int)number;}
+        catch (Exception e) {return (int)number;}
+     }
 
     public static boolean isValidChoice(int num) {
 
