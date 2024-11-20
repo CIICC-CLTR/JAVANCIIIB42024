@@ -10,12 +10,12 @@ public class OddEven_PostiveNegative_Zero {
         Scanner scan = new Scanner(System.in);
         double num = 0.0;
 
-        System.out.print("\nEnter Number: ");
-        System.out.println(checkNumber(scan,num));
-
+        System.out.print(checkNumber("\nEnter Number: ",scan,num));
+      
     }
 
-    public static String checkNumber(Scanner scan,double number){
+    public static String checkNumber(String prompt,Scanner scan,double number){
+        System.out.print(prompt);
         try {
             number = scan.nextDouble();
             return (number==0)? (int) number +" is Zero even Number\n":( (number<0)? number + " is Negative" +  oddEven(number): number + " is Postive" + oddEven(number))+"\n";     
