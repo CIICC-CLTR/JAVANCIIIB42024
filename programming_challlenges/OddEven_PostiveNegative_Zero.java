@@ -20,7 +20,7 @@ public class OddEven_PostiveNegative_Zero {
                 return (number==0)? (int) number +" is Zero even Number\n":( (number<0)? number + " is Negative" +  oddEven(number): number + " is Postive" + oddEven(number))+"\n";     
             } 
             catch (Exception e) {
-                return ("Invalid Input\n\n");      
+                return ("Invalid Input, This program accepts NUMBERS ONLY!\n\n");      
             }
    
     }
