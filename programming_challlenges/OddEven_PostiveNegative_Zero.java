@@ -18,7 +18,7 @@ public class OddEven_PostiveNegative_Zero {
     public static String checkNumber(Scanner scan,double number){
         try {
             number = scan.nextDouble();
-            return (number==0)? (int) number +" is Zero even Number":( (number<0)? number + " is Negative" +  oddEven(number): number + " is Postive" + oddEven(number))+"\n";     
+            return (number==0)? (int) number +" is Zero even Number\n":( (number<0)? number + " is Negative" +  oddEven(number): number + " is Postive" + oddEven(number))+"\n";     
 
         } catch (InputMismatchException e) {
              return ("Invalid Input");      
