@@ -11,7 +11,6 @@ public class OddEven_PostiveNegative_Zero {
         double num = 0.0;
 
         System.out.print(checkNumber("\nEnter Number: ",scan,num));
-      
     }
 
     public static String checkNumber(String prompt,Scanner scan,double number){
