@@ -1,6 +1,5 @@
 package programming_challlenges;
-
-import java.util.InputMismatchException;
+ 
 import java.util.Scanner;
 
 public class OddEven_PostiveNegative_Zero {
@@ -13,18 +12,18 @@ public class OddEven_PostiveNegative_Zero {
         System.out.print(checkNumber("\nEnter Number: ",scan,num));
     }
 
+
     public static String checkNumber(String prompt,Scanner scan,double number){
         System.out.print(prompt);
-        try {
-            number = scan.nextDouble();
-            return (number==0)? (int) number +" is Zero even Number\n":( (number<0)? number + " is Negative" +  oddEven(number): number + " is Postive" + oddEven(number))+"\n";     
-
-        } catch (InputMismatchException e) {
-             return ("Invalid Input");      
-        }
+            try {
+                number = scan.nextDouble();
+                return (number==0)? (int) number +" is Zero even Number\n":( (number<0)? number + " is Negative" +  oddEven(number): number + " is Postive" + oddEven(number))+"\n";     
+            } 
+            catch (Exception e) {
+                return ("Invalid Input\n\n");      
+            }
    
     }
-
     public static String oddEven(double number){
         int num=0;
         num = (int) number;
