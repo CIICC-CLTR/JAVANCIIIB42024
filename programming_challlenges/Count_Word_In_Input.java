@@ -9,7 +9,7 @@ public class Count_Word_In_Input {
         System.out.print("\nEnter a sentence: ");
         String input = scan.nextLine();
 
-        System.out.println((words = new String[(input.split("\\s")).length]).length +" - is the word count in the word: " + input);
+        System.out.println((words = new String[(input.split("\\s")).length]).length +" - is the word count in the word: " + input +"\n");
 
         scan.close();
     }
