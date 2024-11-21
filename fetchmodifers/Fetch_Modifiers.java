@@ -1,5 +1,5 @@
 package fetchmodifers;
-import programming_challlenges.AccessModifiers;
+import access_modifier.AccessModifiers;
 
 public class Fetch_Modifiers extends AccessModifiers {
     

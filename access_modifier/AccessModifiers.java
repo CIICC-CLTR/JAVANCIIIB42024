@@ -1,4 +1,5 @@
-package programming_challlenges;
+package access_modifier;
+
 
 public class AccessModifiers {
 
