@@ -18,7 +18,7 @@ public class AccessModifiers {
 
         System.out.println("\nI am in Private method,\n1.) can be accessed within the class only \n2.) Just make an instantiation\n");
     }
-    private void protectedAccessModifier(){
+    protected void protectedAccessModifier(){
 
         System.out.println("\nI am in Protected method,\n1.) can be accessed within the class and within the same package\n2.) Can be used by extending my class \n2.) Just make an instantiation\n");
     }
