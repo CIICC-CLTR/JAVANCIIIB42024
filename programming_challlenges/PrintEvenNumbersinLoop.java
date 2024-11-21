@@ -12,16 +12,24 @@ public class PrintEvenNumbersinLoop {
                 743, 527 };
 
         // Your code goes here
+               printEvenNumber(numbers);
+    }
+
+    public static void printEvenNumber(int[]numbers) {
         int cnt = 0;
         boolean isItEven = false;
+        // int index=0;
 
-        for (int i : numbers) {
-
-            if ((isItEven = (i == 237) ? true : false))break;
-
-            if (i % 2 == 0)++cnt;System.out.println(i + " even");
+        for (int number : numbers) {
+            if ((isItEven = (number == 237) ? true : false))break;
+            if (number % 2 == 0){++cnt;System.out.println(number);
+            // if (number % 2 == 0){++cnt;System.out.println(number + " at index " +index);
+            // index++;
+            }
 
         }
-        System.out.println("the total even number is: " + cnt);
+        System.out.println("The Total Even numbers is: " + cnt);
     }
+    
+
 }
