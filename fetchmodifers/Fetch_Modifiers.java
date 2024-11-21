@@ -12,12 +12,12 @@ public class Fetch_Modifiers extends AccessModifiers {
         fetchProtected.protectedAccessModifier();
         
     }
- 
-}
-class InnerFetch_Modifiers extends AccessModifiers {
+    class InnerFetch_Modifiers extends Fetch_Modifiers {
 
-    InnerFetch_Modifiers fetchProtected = new InnerFetch_Modifiers();
-    fetchmodifers.protectedAccessModifier();
-
+        InnerFetch_Modifiers fetchProtected = new InnerFetch_Modifiers();
+        fetchmodifers.protectedAccessModifier();
     
+        
+    }
+ 
 }
