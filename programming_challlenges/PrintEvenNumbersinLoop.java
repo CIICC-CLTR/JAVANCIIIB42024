@@ -16,20 +16,11 @@ public class PrintEvenNumbersinLoop {
     }
 
     public static void printEvenNumber(int[]numbers) {
-        int cnt = 0;
         boolean isItEven = false;
-        // int index=0;
-
+       
         for (int number : numbers) {
             if ((isItEven = (number == 237) ? true : false))break;
-            if (number % 2 == 0){++cnt;System.out.println(number);
-            // if (number % 2 == 0){++cnt;System.out.println(number + " at index " +index);
-            // index++;
-            }
-
-        }
-        System.out.println("The Total Even numbers is: " + cnt);
-    }
-    
-
+            if (number % 2 == 0){System.out.println(number);}
+       }        
+    }   
 }
